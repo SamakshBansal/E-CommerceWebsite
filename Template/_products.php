@@ -1,9 +1,15 @@
 <!--   product  -->
+<?php
+    $item_id = $_GET['item_id'] ?? 1;
+    foreach ($product->getData() as $item) :
+        if ($item['item_id'] == $item_id) :
+?>
 <section id="product" class="py-3">
     <div class="container">
         <div class="row">
             <div class="col-sm-6">
-                <img src="./assets/products/1.png" alt="product" class="img-fluid">
+                <img src="<?php echo $item['item_image'] ?? "./assets/products/1.png" ?>" alt="product"
+                    class="img-fluid">
                 <div class="form-row pt-4 font-size-16 font-baloo">
                     <div class="col">
                         <button type="submit" class="btn btn-danger form-control">Proceed to Buy</button>
@@ -14,8 +20,8 @@
                 </div>
             </div>
             <div class="col-sm-6 py-5">
-                <h5 class="font-baloo font-size-20">Samsung Galaxy 10</h5>
-                <small>by Samsung</small>
+                <h5 class="font-baloo font-size-20"><?php echo $item['item_name'] ?? "Unknown"; ?></h5>
+                <small>by <?php echo $item['item_brand'] ?? "Brand"; ?></small>
                 <div class="d-flex">
                     <div class="rating text-warning font-size-12">
                         <span><i class="fas fa-star"></i></span>
@@ -27,6 +33,7 @@
                     <a href="#" class="px-2 font-rale font-size-14">20,534 ratings | 1000+ answered questions</a>
                 </div>
                 <hr class="m-0">
+
                 <!---    product price       -->
                 <table class="my-3">
                     <tr class="font-rale font-size-14">
@@ -35,7 +42,7 @@
                     </tr>
                     <tr class="font-rale font-size-14">
                         <td>Deal Price:</td>
-                        <td class="font-size-20 text-danger">$<span>152.00</span><small
+                        <td class="font-size-20 text-danger">$<span><?php echo $item['item_price'] ?? 0; ?></span><small
                                 class="text-dark font-size-12">&nbsp;&nbsp;Inclusive of all taxes</small></td>
                     </tr>
                     <tr class="font-rale font-size-14">
@@ -44,6 +51,7 @@
                     </tr>
                 </table>
                 <!---    !product price       -->
+
                 <!--    #policy -->
                 <div id="policy">
                     <div class="d-flex">
@@ -69,6 +77,7 @@
                 </div>
                 <!--    !policy -->
                 <hr>
+
                 <!-- order-details -->
                 <div id="order-details" class="font-rale d-flex flex-column text-dark">
                     <small>Delivery by : Mar 29 - Apr 1</small>
@@ -77,6 +86,7 @@
                         424201</small>
                 </div>
                 <!-- !order-details -->
+
                 <div class="row">
                     <div class="col-6">
                         <!-- color -->
@@ -109,6 +119,7 @@
                         <!-- !product qty section -->
                     </div>
                 </div>
+
                 <!-- size -->
                 <div class="size my-3">
                     <h6 class="font-baloo">Size :</h6>
@@ -125,7 +136,10 @@
                     </div>
                 </div>
                 <!-- !size -->
+
+
             </div>
+
             <div class="col-12">
                 <h6 class="font-rubik">Product Description</h6>
                 <hr>
@@ -144,3 +158,7 @@
     </div>
 </section>
 <!--   !product  -->
+<?php
+        endif;
+        endforeach;
+?>
