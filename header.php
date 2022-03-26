@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mobile Shopee</title>
+    <title>Mobile Ki Dukaan</title>
 
     <!-- Bootstrap CDN -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
@@ -36,8 +36,9 @@
     <!-- start #header -->
     <header id="header">
         <div class="strip d-flex justify-content-between px-4 py-1 bg-light">
-            <p class="font-rale font-size-12 text-black-50 m-0">Jordan Calderon 430-985 Eleifend St. Duluth Washington
-                92611 (427) 930-5255</p>
+            <p class="font-rale font-size-12 text-black-50 m-0"> Shop No. 420, Meena Bazaar, Jama Masjid, Chandni Chowk,
+                New Delhi,
+                Delhi 110006</p>
             <div class="font-rale font-size-14">
                 <a href="#" class="px-3 border-right border-left text-dark">Login</a>
                 <a href="#" class="px-3 border-right text-dark">Whishlist (0)</a>
@@ -46,7 +47,7 @@
 
         <!-- Primary Navigation -->
         <nav class="navbar navbar-expand-lg navbar-dark color-second-bg">
-            <a class="navbar-brand" href="#">Mobile Shopee</a>
+            <a class="navbar-brand" href="#">Mobile Ki Dukaan</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
                 aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
