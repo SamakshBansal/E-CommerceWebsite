@@ -47,7 +47,7 @@
 
         <!-- Primary Navigation -->
         <nav class="navbar navbar-expand-lg navbar-dark color-second-bg">
-            <a class="navbar-brand" href="#">Mobile Ki Dukaan</a>
+            <a class="navbar-brand" href="http://localhost/E-CommerceWebsite/">Mobile Ki Dukaan</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
                 aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -55,7 +55,7 @@
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav m-auto font-rubik">
                     <li class="nav-item active">
-                        <a class="nav-link" href="#">On Sale</a>
+                        <a class="nav-link" href="http://localhost/E-CommerceWebsite/">On Sale</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#">Category</a>
